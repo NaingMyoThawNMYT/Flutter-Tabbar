@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'selected_bubble_tabbar_page.dart';
 import 'default_icon_and_text_tabbar_page.dart';
 import 'default_icon_tabbar_page.dart';
 import 'default_text_tabbar_page.dart';
@@ -59,6 +60,20 @@ class MyHomePage extends StatelessWidget {
                   );
                 },
                 child: Text('Default Icon & Text Tabbar'),
+              ),
+            ),
+            ButtonTheme(
+              minWidth: double.infinity,
+              child: RaisedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SelectedBubbleTabbarPage(),
+                    ),
+                  );
+                },
+                child: Text('Selected Bubble Tabbar'),
               ),
             ),
           ],

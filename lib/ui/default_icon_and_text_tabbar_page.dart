@@ -10,9 +10,9 @@ class DefaultIconAndTextTabbarPage extends StatelessWidget {
           title: Text('Default Icon & Text Tabbar Page'),
           bottom: TabBar(
             tabs: <Widget>[
-              Tab(icon: Icon(Icons.directions_car), text: "Car"),
-              Tab(icon: Icon(Icons.directions_transit), text: "Transit"),
-              Tab(icon: Icon(Icons.directions_bike), text: "Bike"),
+              Tab(icon: Icon(Icons.directions_car), text: 'Car'),
+              Tab(icon: Icon(Icons.directions_transit), text: 'Transit'),
+              Tab(icon: Icon(Icons.directions_bike), text: 'Bike'),
             ],
           ),
         ),
