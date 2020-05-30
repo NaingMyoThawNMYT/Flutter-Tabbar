@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'utils/google_style_tabbar_indicator.dart';
+import 'utils/bubble_tabbar.dart';
 
-class GoogleStyleTabbarPage extends StatelessWidget {
+class BubbleTabbarPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -11,24 +11,25 @@ class GoogleStyleTabbarPage extends StatelessWidget {
         appBar: AppBar(
           iconTheme: IconThemeData(color: Colors.black),
           title: Text(
-            'Google Style Tabbar Page',
+            'Bubble Tabbar Page',
             style: TextStyle(color: Colors.black),
           ),
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-          elevation: 1.0,
-          bottom: TabBar(
-            labelColor: Colors.blue,
-            unselectedLabelColor: Colors.black,
-            indicator: GoogleStyleIndicator(
-              indicatorSize: GoogleStyleIndicatorSize.normal,
-              indicatorHeight: 4.0,
-              indicatorColor: Colors.blue,
+          elevation: 0.0,
+          bottom: BubbleTabbar(
+            tabBar: TabBar(
+              unselectedLabelColor: Colors.white,
+              indicator: BoxDecoration(
+                borderRadius: BorderRadius.circular(30.0),
+                color: Colors.blue,
+              ),
+              tabs: <Widget>[
+                Tab(text: 'Car'),
+                Tab(text: 'Transit'),
+                Tab(text: 'Bike'),
+              ],
             ),
-            tabs: <Widget>[
-              Tab(text: 'Car'),
-              Tab(text: 'Transit'),
-              Tab(text: 'Bike'),
-            ],
+            color: Colors.blue[200],
           ),
         ),
         body: TabBarView(
