@@ -5,3 +5,4 @@
 3. At "DefaultTabbarPage", default tabbar and tabbar view are implemented.
 4. "DefaultTabbarPage" is refactored renamed to "DefaultIconTabbarPage".
 5. "DefaultTextTabbarPage" is added.
+6. "DefaultIconAndTextTabbarPage" is added.
