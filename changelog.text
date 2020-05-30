@@ -2,3 +2,4 @@
 ----------
 1. Initial commit.
 2. At "MyHomePage", options list is added.
+3. At "DefaultTabbarPage", default tabbar and tabbar view are implemented.
