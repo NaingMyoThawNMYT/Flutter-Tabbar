@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class DefaultTabbarPage extends StatelessWidget {
+class DefaultTextTabbarPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Default Tabbar Page'),
+          title: Text('Default Text Tabbar Page'),
           bottom: TabBar(
             tabs: <Widget>[
-              Tab(icon: Icon(Icons.directions_car)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_bike)),
+              Tab(text: "Car"),
+              Tab(text: "Transit"),
+              Tab(text: "Bike"),
             ],
           ),
         ),
