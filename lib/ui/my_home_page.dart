@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'bubble_tabbar_page.dart';
+import 'default_text_tabbar_with_controller_page.dart';
 import 'google_style_tabbar_page.dart';
 import 'selected_bubble_tabbar_page.dart';
 import 'default_icon_and_text_tabbar_page.dart';
@@ -103,6 +104,21 @@ class MyHomePage extends StatelessWidget {
                 );
               },
               child: Text('Bubble Tabbar'),
+            ),
+          ),
+          ButtonTheme(
+            minWidth: double.infinity,
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        DefaultTextTabbarWithTabControllerPage(),
+                  ),
+                );
+              },
+              child: Text('Default Text Tabbar with Controller'),
             ),
           ),
         ],
